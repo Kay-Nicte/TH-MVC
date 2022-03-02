@@ -14,7 +14,7 @@
 
 <body>
   <center><div class="container">
-    <div class="row" style="justify-content:center";>
+    <div class="row" id="cajitaInicioSesion" style="justify-content:center";>
 
       <form method="POST" action="index.php?control=ControlLogin&operacio=login">
         <h2> Iniciar sesión </h2>
