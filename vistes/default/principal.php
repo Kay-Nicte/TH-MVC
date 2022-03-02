@@ -12,50 +12,22 @@
     <title>Tarraco Heroínas</title>
 </head>
 
-<d>
+<>
 
 
-    <!-- <div class="postit" style="  max-width: 100%;
-    height: auto;
-    width: 20%;
-    margin-left: 90%;
-    color: white;
-    background: #333;
-    border-radius: 10px; 
-    cursor: pointer;
-    display: inline-block;
-    line-height: normal;
-    padding: 9px 20px 2px 2px;
-    text-align: right;
-    text-decoration: none;
-    text-shadow: 0 0 1px;
-    transition: all .3s;
-    vertical-align: middle;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, );">
-        <span> Usuario:
+    <!-- Tarjetón de datos de usuario + historia actual + cerrar sesión -->
+
+    <div class="card text-dark bg-warning mb-4" style="max-width: 16rem; max-height: 8rem; float: right;">
+
+        <div class="card-body" style="text-align:center;">
+            <b>Usuario:</b>
             <?php if (isset($_SESSION['username'])) {
                 print_r($_SESSION['username']);
             }
             ?>
-        </span><br>
-        <span> Historia: Castellarnau </span><br>
-        <a class="nav-link" href="index.php?control=ControlLogin&operacio=logout">Cerrar Sesión</a>
+            <br>
+            <b>Historia:</b> El Fantasma de la Casa Castellarnau
 
-    </div> -->
-
-    <!-- Tarjetón de datos de usuario + historia actual + cerrar sesión -->
-
-        <div class="card text-dark bg-warning mb-4" style="max-width: 16rem; max-height: 8rem; float: right;">
-        
-        <div class="card-body" style="text-align:center;">
-                <b>Usuario:</b>
-                <?php if (isset($_SESSION['username'])) {
-                    print_r($_SESSION['username']);
-                }
-                ?>
-           <br>
-              <b>Historia:</b>  El Fantasma de la Casa Castellarnau
-            
             <a class="nav-link" href="index.php?control=ControlLogin&operacio=logout">Cerrar Sesión</a>
         </div>
     </div>
@@ -93,44 +65,38 @@
         </button>
     </div>
     <!-- Fin del Carrusel -->
+
     <br><br><br><br>
+
     <!-- Historias -->
     <h2>
         <center>Historias</center>
     </h2>
     <br>
-    <div class="row" style="color: #333; margin-left: 20%;">
-        <div class="col-sm-3">
-            <div class="card" style="background: transparent!important;">
-                <div class="card-body">
-                    <h5 class="card-title">El Fantasma de la Casa Castellarnau</h5>
-                    <p class="card-text">Los rumores hablan de que la casa está embrujada, y los gritos que provienen de la habitación prohibida no son de mucha ayuda... ¿Podrás rescatar al fantasma de la Casa Castellarnau?</p>
-                    <a href="#" class="btn btn-dark">Jugar</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="card" style="background: transparent!important;">
-                <div class="card-body">
-                    <h5 class="card-title">Santísima Tecla Romana</h5>
-                    <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolor delectus suscipit soluta temporibus, quod veritatis ducimus voluptate earum harum, molestias nisi assumenda rem maxime.
-                    </p>
-                    <a href="#" class="btn btn-dark">Jugar</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="card" style="background: transparent!important;">
-                <div class="card-body">
-                    <h5 class="card-title">Ardi en la Prehistoria</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nostrum voluptatem sit et ut, magnam nihil non quia numquam neque maxime rem, a quidem. Dolores perferendis vero similique aliquid nostrum.</p>
-                    <a href="#" class="btn btn-dark">Jugar</a>
-                </div>
-            </div>
+  
+    <div class="card border-dark bg-transparent mb-3" style="max-width: 20rem; position: absolute; margin-left: 8%;">
+        <div class="card-header bg-dark;"><b>El Fantasma de la Casa Castellarnau</b></div>
+        <div class="card-body text-dark">
+            <p class="card-text">Los rumores hablan de que la casa está embrujada, y los gritos que provienen de la habitación prohibida no son de mucha ayuda... ¿Podrás rescatar al fantasma de la Casa Castellarnau?</p>
+            <a href="index.php?control=ControlCastellarnau&operacio=llistat" class="btn btn-dark">Jugar</a>
         </div>
     </div>
-
+    <div class="card border-dark bg-transparent mb-3" style="max-width: 20rem; position:absolute; margin-left: 38%;">
+        <div class="card-header"><b>Santísima Tecla Romana</b></div>
+        <div class="card-body text-dark">
+            <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolor delectus suscipit soluta temporibus, quod veritatis ducimus voluptate earum harum, molestias nisi assumenda rem.
+            </p>
+            <a href="#" class="btn btn-dark">Jugar</a>
+        </div>
+    </div>
+    <div class="card border-dark bg-transparent mb-3" style="max-width: 20rem; position:absolute;margin-left: 68%;">
+        <div class="card-header"><b>Ardi en la Prehistoria</b></div>
+        <div class="card-body text-dark">
+            <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolor delectus suscipit soluta temporibus, quod veritatis ducimus voluptate earum harum, molestias nisi assumenda rem.
+            </p>
+            <a href="#" class="btn btn-dark">Jugar</a>
+        </div>
+    </div>
 
     </body>
 
