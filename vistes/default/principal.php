@@ -67,7 +67,7 @@
         <div class="card-body text-dark">
             <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolor delectus suscipit soluta temporibus, quod veritatis ducimus voluptate earum harum, molestias nisi assumenda rem.
             </p>
-            <a href="#" class="btn btn-dark">Jugar</a>
+            <a href="#" class="btn btn-dark disabled">Próximamente...</a>
         </div>
     </div>
     <div class="card border-dark bg-transparent mb-3" style="max-width: 20rem; position:absolute;margin-left: 68%;">
@@ -75,7 +75,7 @@
         <div class="card-body text-dark">
             <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolor delectus suscipit soluta temporibus, quod veritatis ducimus voluptate earum harum, molestias nisi assumenda rem.
             </p>
-            <a href="#" class="btn btn-dark">Jugar</a>
+            <a href="#" class="btn btn-dark disabled">Próximamente...</a>
         </div>
     </div>
 
