@@ -15,7 +15,7 @@
       text-decoration: none;
       color: white;
       font-size: 20px;
-      background-color: #333;
+      background-color: #3339;
     }
 
     .page-link {
@@ -28,7 +28,7 @@
     }
 
     .botonesAvance {
-      margin-left: 30%;
+      margin-left: 32%;
       position: fixed;  
     }
   </style>
