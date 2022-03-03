@@ -44,7 +44,7 @@
         echo "<li class='page-item'><a class='page-link' href='index.php?control=ControlCastellarnau&operacio=llistat&page=$previous'>Previous</a></li>";
         for ($i = 1; $i <= $total_pags; $i++) {
 
-          echo "<li class='page-item'><a class='page-link' href='index.php?control=ControlCastellarnau&operacio=llistat&page=" . $i . "' >" . $i . "</a></li>";
+          // echo "<li class='page-item'><a class='page-link' href='index.php?control=ControlCastellarnau&operacio=llistat&page=" . $i . "' >" . $i . "</a></li>";
         }
 
         echo " <li class='page-item'><a class='page-link' href='index.php?control=ControlCastellarnau&operacio=llistat&page=$next'>Next</a></li>";
