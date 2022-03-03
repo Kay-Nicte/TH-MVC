@@ -220,14 +220,35 @@ class ControlCastellarnau
             header("Location: index.php?control=ControlCastellarnau");
             exit;
         }
-        // eborrem el superheroi de la BD
-        $res = $this->fragmentos->delete($codi);
-        $res = true;
-        if ($res)
-            $_SESSION['missatge'] = "Frase eliminada.";
-        else
-            $_SESSION['missatge'] = "La frase no s'ha pogut esborrar!";
 
         header("Location: index.php?control=ControlCastellarnau");
+    }
+
+    function getFrase()
+    {
+
+        $codi = $_GET['codi'];
+        $target = 0;
+
+        if($codi == 5){
+            $target = 10;
+        }else if($codi == 2){
+            $target = 8;
+        }
+
+        $actual = $this->fragmentos->get($target);
+
+        if (!isset($_GET['codi'])) {
+            $_SESSION['missatge'] = "Has de triar una frase!";
+            header("Location: index.php?control=ControlCastellarnau&operacio=llistat");
+            exit;
+        }
+
+        // Si el id de la frase no és correcte i no s'ha pogut recuperar
+        // no continuem!
+        $actual = $actual['ID'];
+//        $_SESSION['missatge'] = $actual;
+        header("Location: index.php?control=ControlCastellarnau&operacio=llistat&page=$actual");
+
     }
 }

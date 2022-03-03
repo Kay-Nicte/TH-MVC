@@ -21,7 +21,7 @@
 
     foreach ($res as $fragmentos) {
 
-      echo "<br><br>" . $fragmentos['frase'] . "<br><br></td>";
+        echo "<br><br><a href='index.php?control=ControlCastellarnau&operacio=getFrase&codi=". $fragmentos['ID'] ."'>" . $fragmentos['frase'] . "</a><br><br></td>";
 
       echo "</tr>";
     }

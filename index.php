@@ -1,3 +1,6 @@
+<?php
+ob_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -60,7 +63,7 @@
     $objcontrol = new ControlDefault();
     // Aquest controlador ha de tenir també obligatòriament el mètode index
     $objcontrol->index();
-
+    ob_end_flush();
     ?>
 </body>
 
