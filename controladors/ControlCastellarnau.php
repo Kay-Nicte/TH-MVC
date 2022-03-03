@@ -230,10 +230,12 @@ class ControlCastellarnau
         $codi = $_GET['codi'];
         $target = 0;
 
-        if($codi == 5){
-            $target = 10;
-        }else if($codi == 2){
-            $target = 8;
+        // Capítulo uno: decisiones
+
+        if($codi == 12){ //Ruta A
+            $target = 14;
+        }else if($codi == 13){ //Ruta B
+            $target = 38;
         }
 
         $actual = $this->fragmentos->get($target);

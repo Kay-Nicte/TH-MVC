@@ -10,20 +10,39 @@
     body {
       color: whitesmoke;
     }
+
+    #frases {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      background-color: #333;
+    }
+
+    .page-link {
+      color: #333;
+    }
+
+
+    .container {
+      padding-top: 10%;
+    }
+
+    .botonesAvance {
+      margin-left: 30%;
+      position: fixed;  
+    }
   </style>
 </head>
 
 <body>
   <div class="container">
 
-    <br><br><br>
+
     <?php
 
     foreach ($res as $fragmentos) {
 
-      echo "<br><br><a href='index.php?control=ControlCastellarnau&operacio=getFrase&codi=" . $fragmentos['ID'] . "'>" . $fragmentos['frase'] . "</a><br><br></td>";
-
-      echo "</tr>";
+      echo "<br><br><a id='frases' href='index.php?control=ControlCastellarnau&operacio=getFrase&codi=" . $fragmentos['ID'] . "'>" . $fragmentos['frase'] . "</a><br><br></td></tr>";
     }
 
     if (isset($_SESSION['missatge'])) {
@@ -33,7 +52,7 @@
 
     ?>
 
-    <nav>
+    <nav class="botonesAvance">
       <ul class="pagination">
         <?php
 
@@ -41,13 +60,13 @@
         $previous = $numPagina - 1;
 
 
-        echo "<li class='page-item'><a class='page-link' href='index.php?control=ControlCastellarnau&operacio=llistat&page=$previous'>Previous</a></li>";
         for ($i = 1; $i <= $total_pags; $i++) {
 
           // echo "<li class='page-item'><a class='page-link' href='index.php?control=ControlCastellarnau&operacio=llistat&page=" . $i . "' >" . $i . "</a></li>";
         }
 
-        echo " <li class='page-item'><a class='page-link' href='index.php?control=ControlCastellarnau&operacio=llistat&page=$next'>Next</a></li>";
+        echo "<li class='page-item' id='botonPrevious'><a class='page-link' href='index.php?control=ControlCastellarnau&operacio=llistat&page=$previous'>Anterior</a></li>";
+        echo "<li class='page-item' id='botonNext'><a class='page-link' href='index.php?control=ControlCastellarnau&operacio=llistat&page=$next'>Siguiente</a></li>";
 
         ?>
 
