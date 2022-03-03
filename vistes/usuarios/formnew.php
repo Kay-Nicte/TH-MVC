@@ -2,7 +2,7 @@
 include_once 'helpers/request.php';
 ?>
 <br><br><br></br>
-<div class="container">
+<div class="container" style="color:whitesmoke";>
 <h3>Nuevo Usuario</h3>
 <form method="POST" action="index.php?control=ControlUsers&operacio=store">
 	

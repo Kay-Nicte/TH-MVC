@@ -8,6 +8,8 @@ class Model {
     protected $taula="";
     protected $database ="daw";
 
+    
+
     function __construct() {
 		 
 		try {
