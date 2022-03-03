@@ -56,8 +56,8 @@
     // No s'ha especificat cap controlador en la url
     // Es crida per defecte el controlador controlDefault
     // Per a que funcioni el programa ha d'estar implementat!!
-    include_once 'controladors/ControlCastellarnau.php';
-    $objcontrol = new ControlCastellarnau();
+    include_once 'controladors/ControlDefault.php';
+    $objcontrol = new ControlDefault();
     // Aquest controlador ha de tenir també obligatòriament el mètode index
     $objcontrol->index();
 

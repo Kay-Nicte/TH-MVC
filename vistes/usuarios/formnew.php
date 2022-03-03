@@ -31,6 +31,7 @@ include_once 'helpers/request.php';
   </div>
 <div class="form-group">
   <br><button type="submit" class="btn btn-primary">Enviar</button>
+  <button type="button" class="btn btn-danger"><a href="index.php?control=ControlLogin" style="text-decoration: none; color:white;">Cancelar</a></button>
 </div>
   	
 

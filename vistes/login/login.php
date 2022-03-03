@@ -13,30 +13,35 @@
 </head>
 
 <body>
-  <center><div class="container">
-    <div class="row" id="cajitaInicioSesion" style="justify-content:center";>
+  <center>
+    <div class="container">
+      <div class="row" id="cajitaInicioSesion" style="justify-content:center" ;>
 
-      <form method="POST" action="index.php?control=ControlLogin&operacio=login">
-        <h2> Iniciar sesión </h2>
-        <br>
-        <div class="form-group">
-          <label>Username</label>
-          <input type="text" name="username" class="form-control">
+        <form method="POST" action="index.php?control=ControlLogin&operacio=login">
+          <h2> Iniciar sesión </h2>
+          <br>
+          <div class="form-group">
+            <label>Username</label>
+            <input type="text" name="username" class="form-control">
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <input type="password" name="password" class="form-control">
+          </div>
+          <div class="form-group">
+          
+          
+          <input type="checkbox" id="remember_me" name="_remember_me" checked />
+          <label for="remember_me">Quiero mantener mi sesión iniciada</label>  <br><button type="submit" class="btn btn-primary">Entrar</button>
         </div>
-        <div class="form-group">
-          <label>Password</label>
-          <input type="password" name="password" class="form-control">
-        </div>
-        <div class="form-group">
-          <button type="submit" class="btn btn-primary">Entrar</button>
-        </div>
-        <a href="http://localhost/TH/index.php?control=ControlUsers&operacio=showformnew" id="registro">¿Es tu primera vez aquí? ¡Regístrate y vive la aventura! :)</a>
+          <a href="http://localhost/TH/index.php?control=ControlUsers&operacio=showformnew" id="registro">¿Es tu primera vez aquí? ¡Regístrate y vive la aventura! :)</a>
 
+      </div>
+      <br><br>
+
+      </form>
     </div>
-    <br><br>
-
-    </form>
-  </div></center>
+  </center>
 
 
   <?php

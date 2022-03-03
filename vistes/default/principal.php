@@ -50,7 +50,7 @@
     <br><br><br><br>
 
     <!-- Historias -->
-    <h2>
+    <h2 style="color: whitesmoke;">
         <center>Historias</center>
     </h2>
     <br>

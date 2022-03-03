@@ -5,10 +5,12 @@ include_once 'helpers/request.php';
 class ControlCastellarnau
 {
 
+
     private $fragmentos;
 
     function __construct()
     {
+
         // Per gestinar las frases s'ha de tenir el superpoder de ser
         // un usuari registrat!
         //        if (!isset($_SESSION['username'])) {
@@ -36,14 +38,16 @@ class ControlCastellarnau
 
     public function index()
     {
-        
+        include_once 'models/Usuaris.php';
+        $usuari = new Usuaris();
+
         include_once 'vistes/templates/header.php';
         include_once 'vistes/default/principal.php';
-        //include_once 'vistes/castellarnau/llistat.php';
         include_once 'vistes/templates/footer.php';
     }
 
-    public function llistat() {
+    public function llistat()
+    {
         // El número de pàgina ens vindrà per paràmetre GET
         // En cas que no hi sigui mostrarem la primera pàgina
         if (isset($_GET['page'])) $numPagina = $_GET['page'];
@@ -58,10 +62,9 @@ class ControlCastellarnau
         // Obtenim les frases de la pàgina indicada
         $res = $this->fragmentos->getPage($numPagina, $numRegsPag);
         include_once 'vistes/templates/header.php';
-        
+
         include_once 'vistes/castellarnau/llistat.php';
         include_once 'vistes/templates/footer.php';
-
     }
 
     // Per afegir una frase, 2 passos: 
@@ -179,15 +182,15 @@ class ControlCastellarnau
 
 
         // Comprovem les restriccions associades a cada camp  
-         if ($frase == "") {
+        if ($frase == "") {
 
-             $_SESSION['frase'] = $frase;
-        
-             $_SESSION['missatge'] = "Camps obligatoris!!";
+            $_SESSION['frase'] = $frase;
 
-             header('Location: index.php?control=ControlCastellarnau&operacio=showformupdate');
-             exit;
-         }
+            $_SESSION['missatge'] = "Camps obligatoris!!";
+
+            header('Location: index.php?control=ControlCastellarnau&operacio=showformupdate');
+            exit;
+        }
 
 
         // Modifiquem les dades del superheroi guardant possibles canvis en la BD
