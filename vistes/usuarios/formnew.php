@@ -1,7 +1,7 @@
 <?php
 include_once 'helpers/request.php';
 ?>
-
+<br><br><br></br>
 <div class="container">
 <h3>Nuevo Usuario</h3>
 <form method="POST" action="index.php?control=ControlUsers&operacio=store">

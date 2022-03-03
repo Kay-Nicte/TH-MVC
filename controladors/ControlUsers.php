@@ -45,8 +45,7 @@ class ControlUsers
     public function showformnew()
     {
 
-        include_once 'vistes/templates/header.php';
-
+        include_once 'vistes/templates/registerHeader.php';
         include_once 'vistes/usuarios/formnew.php';
         include_once 'vistes/templates/footer.php';
     }
