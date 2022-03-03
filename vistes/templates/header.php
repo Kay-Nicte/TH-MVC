@@ -12,7 +12,9 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <!-- Navbar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position:fixed;">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Tarraco Heroínas</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,13 +25,13 @@
 
           <?php if (isset($_SESSION['username'])) { ?>
 
-             <li class="nav-item">
+            <li class="nav-item">
               <a class="nav-link" href="index.php?control=ControlCastellarnau">Alejandría</a>
             </li>
 
-             <li class="nav-item">
+            <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="http://localhost/TH/index.php?control=ControlCastellarnau&operacio=llistat">Historia Actual</a>
-            </li> 
+            </li>
 
             <li class="nav-item">
               <a class="nav-link" href="index.php?control=ControlLogin&operacio=logout">Logout</a>
@@ -46,3 +48,22 @@
 
       </div>
   </nav>
+  <!-- Fin de Navbar -->
+  
+  <!-- Tarjetón de datos de usuario + historia actual + cerrar sesión -->
+
+  <div class="card text-dark bg-warning mb-4" style="max-width: 16rem; max-height: 8rem; margin-left:85%; position:fixed;">
+
+    <div class="card-body" style="text-align:center;">
+      <b>Usuario:</b>
+      <?php if (isset($_SESSION['username'])) {
+        print_r($_SESSION['username']);
+      }
+      ?>
+      <br>
+      <b>Historia:</b> El Fantasma de la Casa Castellarnau
+
+      <a class="nav-link" href="index.php?control=ControlLogin&operacio=logout">Cerrar Sesión</a>
+    </div>
+  </div>
+  <!-- Fin de tarjetón de datos de usuario + historia actual + cerrar sesión -->

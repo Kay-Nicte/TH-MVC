@@ -13,25 +13,7 @@
 </head>
 
 
-
-    <!-- Tarjetón de datos de usuario + historia actual + cerrar sesión -->
-
-    <div class="card text-dark bg-warning mb-4" style="max-width: 16rem; max-height: 8rem; float: right;">
-
-        <div class="card-body" style="text-align:center;">
-            <b>Usuario:</b>
-            <?php if (isset($_SESSION['username'])) {
-                print_r($_SESSION['username']);
-            }
-            ?>
-            <br>
-            <b>Historia:</b> El Fantasma de la Casa Castellarnau
-
-            <a class="nav-link" href="index.php?control=ControlLogin&operacio=logout">Cerrar Sesión</a>
-        </div>
-    </div>
-    <!-- Fin de tarjetón de datos de usuario + historia actual + cerrar sesión -->
-
+    <br><br><br><br><br><br><br>
 
     <!-- El Carrusel -->
 
