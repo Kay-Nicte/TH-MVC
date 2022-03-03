@@ -12,7 +12,6 @@
     <title>Tarraco Heroínas</title>
 </head>
 
-<>
 
 
     <!-- Tarjetón de datos de usuario + historia actual + cerrar sesión -->

@@ -5,8 +5,8 @@ class Model {
     protected $bd;
     protected $usuari="root";
     protected $password="";
-    protected $taula;
-    protected $database ="daw";
+    protected $taula="castellarnau";
+    protected $database ="historiasth";
 
     function __construct() {
 		 

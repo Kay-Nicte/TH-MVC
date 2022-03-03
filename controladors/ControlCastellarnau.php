@@ -48,14 +48,14 @@ class ControlCastellarnau
         // En cas que no hi sigui mostrarem la primera pàgina
         if (isset($_GET['page'])) $numPagina = $_GET['page'];
         else $numPagina = 1;
-        // Cada pàgina mostrarà 2 registres
+        // Cada pàgina mostrarà 1 registres
         $numRegsPag = 1;
         // Obtenim el número màxim de pàgines
         $total_pags = $this->fragmentos->numPages($numRegsPag);
         // Si el número de pàgina és incorrecta mostrem la primera
         if ($numPagina <= 0 || $numPagina > $total_pags) $numPagina = 1;
 
-        // Obtenim els superpoders de la pàgina indicada
+        // Obtenim les frases de la pàgina indicada
         $res = $this->fragmentos->getPage($numPagina, $numRegsPag);
         include_once 'vistes/templates/header.php';
         
