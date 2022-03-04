@@ -9,20 +9,38 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <style>
         #botonJugar:hover {
+
             color: whitesmoke !important;
             font-weight: bold !important;
         }
+
+        .contenedorHistorias {
+            width: 70%;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .nav-link:hover {
+            color: #333 !important;
+        }
+
+        .tab-pane{
+            background-color: #3333;
+            padding-left: 1%;
+        }
+
+      
     </style>
 
     <title>Tarraco Heroínas</title>
 </head>
 
-
-<br><br><br><br><br><br><br>
-
 <!-- El Carrusel -->
 
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide position-absolute top-50 start-50 translate-middle"" data-bs-ride="carousel">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -52,15 +70,13 @@
 </div>
 <!-- Fin del Carrusel -->
 
-<br><br><br><br>
 
 <!-- Historias -->
-<h2 style="color: whitesmoke;">
+<!-- <h2 style="color: whitesmoke;">
     <center>Historias</center>
-</h2>
-<br>
+</h2> -->
 
-<div class="card border-dark bg-transparent mb-3" style="max-width: 20rem; position: absolute; margin-left: 8%;">
+<!-- <div class="card border-dark bg-transparent mb-3" style="max-width: 20rem; position: absolute; margin-left: 8%;">
     <div class="card-header bg-dark;"><b>El Fantasma de la Casa Castellarnau</b></div>
     <div class="card-body text-dark">
         <p class="card-text">Los rumores hablan de que la casa está embrujada, y los gritos que provienen de la habitación prohibida no son de mucha ayuda... ¿Podrás rescatar al fantasma de la Casa Castellarnau?</p>
@@ -81,6 +97,25 @@
         <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolor delectus suscipit soluta temporibus, quod veritatis ducimus voluptate earum harum, molestias nisi assumenda rem.
         </p>
         <a href="#" class="btn btn-dark disabled">Próximamente...</a>
+    </div>
+</div> -->
+
+<div class="contenedorHistorias position-absolute top-100 start-50 translate-middle">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active bg-dark text-light" id="caste-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">El Fantasma de la Casa Castellarnau</button>
+        </li>
+        <li class="nav-item active" role="presentation">
+            <button class="nav-link" id="tecla-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Santísima Tecla Romana</button>
+        </li>
+        <li class="nav-item active" role="presentation">
+            <button class="nav-link" id="ardi-tab" data-bs-toggle="tab"data-bs-target="#contact"  type="button" role="tab" aria-controls="contact" aria-selected="false">Ardi en la Prehistoria</button>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><br>Los rumores hablan de que la casa está embrujada, y los gritos que provienen de la habitación prohibida no son de mucha ayuda... ¿Podrás rescatar al fantasma de la Casa Castellarnau?<br><br></div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"><br>Lorem ipsum dolor sit amet, consectetur adipis<br><br></div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi illo voluptatum, quod laborum autem sapiente nisi quia laboriosam amet perspiciatis quidem veritatis laudantium, voluptatem placeat omnis repellat culpa repellendus officiis.<br><br></div>
     </div>
 </div>
 

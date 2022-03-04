@@ -16,12 +16,12 @@
       position: fixed;
       right: 0;
       z-index:9999;
-      background-color: #3338; 
-      color: whitesmoke;
+      background-color: rgba(255, 214, 69, 0.63)!important;
+      color: #333;
     }
     
       #tarjetaDatos:hover {
-      background-color: #ffcc00;
+      background-color: #ffcc00!important;
       color: #333;
     }
 
