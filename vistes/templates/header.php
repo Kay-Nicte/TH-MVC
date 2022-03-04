@@ -8,13 +8,29 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
 
+  <style>
+  
+    #tarjetaDatos{
+      max-width: 16rem;
+      max-height: 8rem;     
+      position: fixed;
+      right: 0;
+      z-index:9999;
+    }
+    
+      #tarjetaDatos:hover {
+      background-color: #ffcc00;
+      color: #333;
+    }
+
+  </style>
 </head>
 
 <body>
 
   <!-- Navbar -->
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position:fixed;">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position:fixed; background-color: #3338;">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Tarraco Heroínas</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,10 +65,10 @@
       </div>
   </nav>
   <!-- Fin de Navbar -->
-  
+
   <!-- Tarjetón de datos de usuario + historia actual + cerrar sesión -->
 
-  <div class="card text-dark bg-warning mb-4" style="max-width: 16rem; max-height: 8rem; margin-left:85%; position:fixed;">
+  <div class="card mb-4" id="tarjetaDatos" style="position:fixed; z-index: top;">
 
     <div class="card-body" style="text-align:center;">
       <b>Usuario:</b>

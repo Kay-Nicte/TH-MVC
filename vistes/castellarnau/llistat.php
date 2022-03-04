@@ -15,7 +15,6 @@
       text-decoration: none;
       color: white;
       font-size: 20px;
-      background-color: #3339;
     }
 
     .page-link {
@@ -29,7 +28,7 @@
 
     .botonesAvance {
       margin-left: 32%;
-      position: fixed;  
+      position: fixed;
     }
   </style>
 </head>
@@ -37,41 +36,36 @@
 <body>
   <div class="container">
 
+    <div class="textoHistoria" style="text-align: center; background-color: #3337; margin-top: 15%;">
+      <?php
+      foreach ($res as $fragmentos) {
 
-    <?php
+        echo "<br><br><a id='frases' href='index.php?control=ControlCastellarnau&operacio=getFrase&codi=" . $fragmentos['ID'] . "'>" . $fragmentos['frase'] . "</a><br><br></td></tr>";
+      }
 
-    foreach ($res as $fragmentos) {
+      if (isset($_SESSION['missatge'])) {
+        echo $_SESSION['missatge'];
+        unset($_SESSION['missatge']);
+      }
+      ?>
 
-      echo "<br><br><a id='frases' href='index.php?control=ControlCastellarnau&operacio=getFrase&codi=" . $fragmentos['ID'] . "'>" . $fragmentos['frase'] . "</a><br><br></td></tr>";
-    }
+      <nav class="botonesAvance">
+        <ul class="pagination">
+          <?php
+          $next = $numPagina + 1;
+          $previous = $numPagina - 1;
 
-    if (isset($_SESSION['missatge'])) {
-      echo $_SESSION['missatge'];
-      unset($_SESSION['missatge']);
-    }
+          for ($i = 1; $i <= $total_pags; $i++) {
+            // echo "<li class='page-item'><a class='page-link' href='index.php?control=ControlCastellarnau&operacio=llistat&page=" . $i . "' >" . $i . "</a></li>";
+          }
 
-    ?>
+          echo "<li class='page-item' id='botonPrevious'><a class='page-link' href='index.php?control=ControlCastellarnau&operacio=llistat&page=$previous'>Anterior</a></li>";
+          echo "<li class='page-item' id='botonNext'><a class='page-link' href='index.php?control=ControlCastellarnau&operacio=llistat&page=$next'>Siguiente</a></li>";
+          ?>
 
-    <nav class="botonesAvance">
-      <ul class="pagination">
-        <?php
-
-        $next = $numPagina + 1;
-        $previous = $numPagina - 1;
-
-
-        for ($i = 1; $i <= $total_pags; $i++) {
-
-          // echo "<li class='page-item'><a class='page-link' href='index.php?control=ControlCastellarnau&operacio=llistat&page=" . $i . "' >" . $i . "</a></li>";
-        }
-
-        echo "<li class='page-item' id='botonPrevious'><a class='page-link' href='index.php?control=ControlCastellarnau&operacio=llistat&page=$previous'>Anterior</a></li>";
-        echo "<li class='page-item' id='botonNext'><a class='page-link' href='index.php?control=ControlCastellarnau&operacio=llistat&page=$next'>Siguiente</a></li>";
-
-        ?>
-
-      </ul>
-    </nav>
+        </ul>
+      </nav>
+    </div>
 
   </div>
 

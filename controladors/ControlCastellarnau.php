@@ -230,12 +230,22 @@ class ControlCastellarnau
         $codi = $_GET['codi'];
         $target = 0;
 
-        // Capítulo uno: decisiones
+        // Capítulo uno: decisiones A
 
-        if($codi == 12){ //Ruta A
-            $target = 14;
-        }else if($codi == 13){ //Ruta B
-            $target = 38;
+        if ($codi == 12) { //Decisión A
+            $target = 14; //Primera página de la ruta A
+        }
+        if ($codi == 37) { //Última página de la ruta A
+            $target = 60; //Primera página de la ruta común
+        }
+
+        // Capítulo uno: decisiones B
+        
+        if ($codi == 13) { //Decisión B
+            $target = 38; //Primera página de la ruta B
+        }
+        if ($codi == 61) { //Última página de la ruta B
+            $target = 62; //Primera página de la ruta común
         }
 
         $actual = $this->fragmentos->get($target);
@@ -249,8 +259,7 @@ class ControlCastellarnau
         // Si el id de la frase no és correcte i no s'ha pogut recuperar
         // no continuem!
         $actual = $actual['ID'];
-//        $_SESSION['missatge'] = $actual;
+        //        $_SESSION['missatge'] = $actual;
         header("Location: index.php?control=ControlCastellarnau&operacio=llistat&page=$actual");
-
     }
 }
