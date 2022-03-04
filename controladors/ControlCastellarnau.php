@@ -248,6 +248,10 @@ class ControlCastellarnau
             $target = 62; //Primera página de la ruta común
         }
 
+        if ($codi == 38) { 
+            $codi = 1038;
+        }
+
         $actual = $this->fragmentos->get($target);
 
         if (!isset($_GET['codi'])) {

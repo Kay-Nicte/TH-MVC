@@ -30,6 +30,8 @@
       margin-left: 32%;
       position: fixed;
     }
+
+    
   </style>
 </head>
 

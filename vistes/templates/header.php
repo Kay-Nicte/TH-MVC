@@ -17,11 +17,17 @@
       right: 0;
       z-index:9999;
       background-color: #3338; 
+      color: whitesmoke;
     }
     
       #tarjetaDatos:hover {
       background-color: #ffcc00;
       color: #333;
+    }
+
+    .nav-link:hover{
+      color: white!important;
+      font-weight: bold !important;
     }
 
   </style>
@@ -47,7 +53,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="http://localhost/TH/index.php?control=ControlCastellarnau&operacio=llistat">Historia Actual</a>
+              <a class="nav-link" href="http://localhost/TH/index.php?control=ControlCastellarnau&operacio=llistat">Historia Actual</a>
             </li>
 
             <li class="nav-item">
