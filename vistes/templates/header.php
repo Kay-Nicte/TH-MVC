@@ -16,6 +16,7 @@
       position: fixed;
       right: 0;
       z-index:9999;
+      background-color: #3338; 
     }
     
       #tarjetaDatos:hover {
@@ -68,7 +69,7 @@
 
   <!-- Tarjetón de datos de usuario + historia actual + cerrar sesión -->
 
-  <div class="card mb-4" id="tarjetaDatos" style="position:fixed; z-index: top;">
+  <div class="card mb-4" id="tarjetaDatos">
 
     <div class="card-body" style="text-align:center;">
       <b>Usuario:</b>
