@@ -30,6 +30,10 @@
       font-weight: bold !important;
     }
 
+    .navbar {
+      z-index:9999;
+    }
+
   </style>
 </head>
 

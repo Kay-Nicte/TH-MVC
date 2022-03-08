@@ -27,12 +27,18 @@
             color: #333 !important;
         }
 
-        .tab-pane{
+        .tab-pane {
             background-color: #3333;
             padding-left: 1%;
         }
 
-      
+        #caste-tab:hover {
+            color: whitesmoke !important;
+        }
+
+        .w-55{
+            width: 55%;
+        }
     </style>
 
     <title>Tarraco Heroínas</title>
@@ -40,7 +46,7 @@
 
 <!-- El Carrusel -->
 
-<div id="carouselExampleIndicators" class="carousel slide position-absolute top-50 start-50 translate-middle"" data-bs-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide position-absolute top-50 start-50 translate-middle"" data-bs-ride=" carousel">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -49,13 +55,13 @@
     <center>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="IMG/castellarnau_carrusel.jpg" class="d-block w-25" alt="...">
+                <img src="IMG/castellarnau_carrusel.jpg" class="d-block w-55" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="IMG/santatecla_carrusel.jpg" class="d-block w-25" alt="...">
+                <img src="IMG/santatecla_carrusel.jpg" class="d-block w-55" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="IMG/ardi_carrusel.jpg" class="d-block w-25" alt="...">
+                <img src="IMG/ardi_carrusel.jpg" class="d-block w-55" alt="...">
             </div>
         </div>
     </center>
@@ -109,7 +115,7 @@
             <button class="nav-link" id="tecla-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Santísima Tecla Romana</button>
         </li>
         <li class="nav-item active" role="presentation">
-            <button class="nav-link" id="ardi-tab" data-bs-toggle="tab"data-bs-target="#contact"  type="button" role="tab" aria-controls="contact" aria-selected="false">Ardi en la Prehistoria</button>
+            <button class="nav-link" id="ardi-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Ardi en la Prehistoria</button>
         </li>
     </ul>
     <div class="tab-content" id="myTabContent">
@@ -118,7 +124,3 @@
         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi illo voluptatum, quod laborum autem sapiente nisi quia laboriosam amet perspiciatis quidem veritatis laudantium, voluptatem placeat omnis repellat culpa repellendus officiis.<br><br></div>
     </div>
 </div>
-
-</body>
-
-</html>
