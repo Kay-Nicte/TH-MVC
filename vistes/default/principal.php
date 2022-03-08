@@ -39,6 +39,10 @@
         .w-55{
             width: 55%;
         }
+
+        .top-60{
+            margin-top:60%;
+        }
     </style>
 
     <title>Tarraco Heroínas</title>
@@ -119,8 +123,12 @@
         </li>
     </ul>
     <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><br>Los rumores hablan de que la casa está embrujada, y los gritos que provienen de la habitación prohibida no son de mucha ayuda... ¿Podrás rescatar al fantasma de la Casa Castellarnau?<br><br></div>
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><br>Los rumores hablan de que la casa está embrujada, y los gritos que provienen de la habitación prohibida no son de mucha ayuda... ¿Podrás rescatar al fantasma de la Casa Castellarnau?<br><br><input type=submit class="btn btn-dark" value="Leer"><br></div>
         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"><br>Lorem ipsum dolor sit amet, consectetur adipis<br><br></div>
         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi illo voluptatum, quod laborum autem sapiente nisi quia laboriosam amet perspiciatis quidem veritatis laudantium, voluptatem placeat omnis repellat culpa repellendus officiis.<br><br></div>
     </div>
+</div>
+
+<div class="contenedorHistorias position-absolute top-60 start-50 translate-middle">
+    .
 </div>
