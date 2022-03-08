@@ -123,7 +123,9 @@
         </li>
     </ul>
     <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><br>Los rumores hablan de que la casa está embrujada, y los gritos que provienen de la habitación prohibida no son de mucha ayuda... ¿Podrás rescatar al fantasma de la Casa Castellarnau?<br><br><input type=submit class="btn btn-dark" value="Leer"><br></div>
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><br>Los rumores hablan de que la casa está embrujada, y los gritos que provienen de la habitación prohibida no son de mucha ayuda... ¿Podrás rescatar al fantasma de la Casa Castellarnau?<br><br>
+        <a href="index.php?control=ControlCastellarnau&operacio=llistat" class="btn btn-dark" id="botonJugar">Jugar</a>
+    </div>
         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"><br>Lorem ipsum dolor sit amet, consectetur adipis<br><br></div>
         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi illo voluptatum, quod laborum autem sapiente nisi quia laboriosam amet perspiciatis quidem veritatis laudantium, voluptatem placeat omnis repellat culpa repellendus officiis.<br><br></div>
     </div>
