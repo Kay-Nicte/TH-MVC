@@ -36,12 +36,17 @@
             color: whitesmoke !important;
         }
 
-        .w-55{
+        .w-55 {
             width: 55%;
         }
 
-        .top-60{
-            margin-top:60%;
+        .top-60 {
+            margin-top: 60%;
+        }
+
+        .tab-pane{
+            padding-bottom: 2%;
+            padding-left: 2%;
         }
     </style>
 
@@ -124,10 +129,14 @@
     </ul>
     <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><br>Los rumores hablan de que la casa está embrujada, y los gritos que provienen de la habitación prohibida no son de mucha ayuda... ¿Podrás rescatar al fantasma de la Casa Castellarnau?<br><br>
-        <a href="index.php?control=ControlCastellarnau&operacio=llistat" class="btn btn-dark" id="botonJugar">Jugar</a>
-    </div>
-        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"><br>Lorem ipsum dolor sit amet, consectetur adipis<br><br></div>
-        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi illo voluptatum, quod laborum autem sapiente nisi quia laboriosam amet perspiciatis quidem veritatis laudantium, voluptatem placeat omnis repellat culpa repellendus officiis.<br><br></div>
+            <a href="index.php?control=ControlCastellarnau&operacio=llistat" class="btn btn-dark" id="botonJugar">Jugar</a>
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde esse quas ut cumque accusamus officiis earum eum libero autem aperiam totam numquam incidunt, deleniti asperiores nobis nihil. Labore, quidem odit?<br><br>
+            <a href="index.php?control=ControlTecla&operacio=llistat" class="btn btn-dark disabled" id="botonJugar">Jugar</a>
+        </div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi illo voluptatum, quod laborum autem sapiente nisi quia laboriosam amet perspiciatis quidem veritatis laudantium, voluptatem placeat omnis repellat culpa repellendus officiis.<br><br>
+            <a href="index.php?control=ControlArdi&operacio=llistat" class="btn btn-dark disabled" id="botonJugar">Jugar</a>
+        </div>
     </div>
 </div>
 
